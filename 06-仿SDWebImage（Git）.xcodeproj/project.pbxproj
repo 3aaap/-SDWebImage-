@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CC11BAD3C0D0045EC64 /* main.m */; };
+		DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */; };
+		DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CC71BAD3C0D0045EC64 /* ViewController.m */; };
+		DAD60CCB1BAD3C0D0045EC64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */; };
+		DAD60CCD1BAD3C0D0045EC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */; };
+		DAD60CD01BAD3C0D0045EC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAD60CBD1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git）.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-仿SDWebImage（Git）.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD60CC11BAD3C0D0045EC64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAD60CC31BAD3C0D0045EC64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAD60CC61BAD3C0D0045EC64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAD60CC71BAD3C0D0045EC64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAD60CCA1BAD3C0D0045EC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAD60CCF1BAD3C0D0045EC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAD60CD11BAD3C0D0045EC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD60CBA1BAD3C0D0045EC64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAD60CB41BAD3C0D0045EC64 = {
+			isa = PBXGroup;
+			children = (
+				DAD60CBF1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */,
+				DAD60CBE1BAD3C0D0045EC64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD60CBE1BAD3C0D0045EC64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CBD1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git）.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD60CBF1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CC31BAD3C0D0045EC64 /* AppDelegate.h */,
+				DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */,
+				DAD60CC61BAD3C0D0045EC64 /* ViewController.h */,
+				DAD60CC71BAD3C0D0045EC64 /* ViewController.m */,
+				DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */,
+				DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */,
+				DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */,
+				DAD60CD11BAD3C0D0045EC64 /* Info.plist */,
+				DAD60CC01BAD3C0D0045EC64 /* Supporting Files */,
+			);
+			path = "06-仿SDWebImage（Git）";
+			sourceTree = "<group>";
+		};
+		DAD60CC01BAD3C0D0045EC64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CC11BAD3C0D0045EC64 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD60CBC1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD60CD41BAD3C0D0045EC64 /* Build configuration list for PBXNativeTarget "06-仿SDWebImage（Git）" */;
+			buildPhases = (
+				DAD60CB91BAD3C0D0045EC64 /* Sources */,
+				DAD60CBA1BAD3C0D0045EC64 /* Frameworks */,
+				DAD60CBB1BAD3C0D0045EC64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "06-仿SDWebImage（Git）";
+			productName = "06-仿SDWebImage（Git）";
+			productReference = DAD60CBD1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git）.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD60CB51BAD3C0D0045EC64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "宋得中";
+				TargetAttributes = {
+					DAD60CBC1BAD3C0D0045EC64 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DAD60CB81BAD3C0D0045EC64 /* Build configuration list for PBXProject "06-仿SDWebImage（Git）" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAD60CB41BAD3C0D0045EC64;
+			productRefGroup = DAD60CBE1BAD3C0D0045EC64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD60CBC1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD60CBB1BAD3C0D0045EC64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD60CD01BAD3C0D0045EC64 /* LaunchScreen.storyboard in Resources */,
+				DAD60CCD1BAD3C0D0045EC64 /* Assets.xcassets in Resources */,
+				DAD60CCB1BAD3C0D0045EC64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD60CB91BAD3C0D0045EC64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */,
+				DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */,
+				DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD60CCA1BAD3C0D0045EC64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD60CCF1BAD3C0D0045EC64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD60CD21BAD3C0D0045EC64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAD60CD31BAD3C0D0045EC64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD60CD51BAD3C0D0045EC64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-仿SDWebImage（Git）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itheima.-6--SDWebImage-Git-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAD60CD61BAD3C0D0045EC64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "06-仿SDWebImage（Git）/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itheima.-6--SDWebImage-Git-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD60CB81BAD3C0D0045EC64 /* Build configuration list for PBXProject "06-仿SDWebImage（Git）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD60CD21BAD3C0D0045EC64 /* Debug */,
+				DAD60CD31BAD3C0D0045EC64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD60CD41BAD3C0D0045EC64 /* Build configuration list for PBXNativeTarget "06-仿SDWebImage（Git）" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD60CD51BAD3C0D0045EC64 /* Debug */,
+				DAD60CD61BAD3C0D0045EC64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD60CB51BAD3C0D0045EC64 /* Project object */;
+}
