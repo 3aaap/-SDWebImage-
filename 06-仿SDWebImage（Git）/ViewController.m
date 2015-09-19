@@ -7,19 +7,32 @@
 //
 
 #import "ViewController.h"
+#import "HMAppModel.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) NSArray* modelArr;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (NSArray*)modelArr
+{
+    if (!_modelArr) {
+        _modelArr = [HMAppModel models];
+    }
+    return _modelArr;
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

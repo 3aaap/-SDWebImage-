@@ -13,6 +13,8 @@
 		DAD60CCB1BAD3C0D0045EC64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */; };
 		DAD60CCD1BAD3C0D0045EC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */; };
 		DAD60CD01BAD3C0D0045EC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */; };
+		DAD60CD81BAD3D320045EC64 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CD71BAD3D320045EC64 /* apps.plist */; settings = {ASSET_TAGS = (); }; };
+		DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD60CCF1BAD3C0D0045EC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD60CD11BAD3C0D0045EC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD60CD71BAD3D320045EC64 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		DAD60CD91BAD3D630045EC64 /* HMAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAppModel.h; sourceTree = "<group>"; };
+		DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAppModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +63,11 @@
 		DAD60CBF1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */ = {
 			isa = PBXGroup;
 			children = (
-				DAD60CC31BAD3C0D0045EC64 /* AppDelegate.h */,
-				DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */,
-				DAD60CC61BAD3C0D0045EC64 /* ViewController.h */,
-				DAD60CC71BAD3C0D0045EC64 /* ViewController.m */,
-				DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */,
+				DAD60CDF1BAD3F410045EC64 /* Other */,
+				DAD60CDE1BAD3F3C0045EC64 /* View */,
+				DAD60CDD1BAD3F330045EC64 /* Controller */,
+				DAD60CDC1BAD3F250045EC64 /* Model */,
 				DAD60CCC1BAD3C0D0045EC64 /* Assets.xcassets */,
-				DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */,
 				DAD60CD11BAD3C0D0045EC64 /* Info.plist */,
 				DAD60CC01BAD3C0D0045EC64 /* Supporting Files */,
 			);
@@ -74,9 +77,46 @@
 		DAD60CC01BAD3C0D0045EC64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAD60CD71BAD3D320045EC64 /* apps.plist */,
 				DAD60CC11BAD3C0D0045EC64 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD60CDC1BAD3F250045EC64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CD91BAD3D630045EC64 /* HMAppModel.h */,
+				DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DAD60CDD1BAD3F330045EC64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CC61BAD3C0D0045EC64 /* ViewController.h */,
+				DAD60CC71BAD3C0D0045EC64 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DAD60CDE1BAD3F3C0045EC64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */,
+				DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DAD60CDF1BAD3F410045EC64 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DAD60CC31BAD3C0D0045EC64 /* AppDelegate.h */,
+				DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD60CD81BAD3D320045EC64 /* apps.plist in Resources */,
 				DAD60CD01BAD3C0D0045EC64 /* LaunchScreen.storyboard in Resources */,
 				DAD60CCD1BAD3C0D0045EC64 /* Assets.xcassets in Resources */,
 				DAD60CCB1BAD3C0D0045EC64 /* Main.storyboard in Resources */,
@@ -151,6 +192,7 @@
 			files = (
 				DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */,
 				DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */,
+				DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */,
 				DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
