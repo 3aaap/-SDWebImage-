@@ -6,7 +6,7 @@
 //  Copyright © 2015年 宋得中. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HMAppModel : NSObject
 

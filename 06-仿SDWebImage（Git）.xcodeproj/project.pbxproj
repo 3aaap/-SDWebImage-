@@ -16,6 +16,7 @@
 		DAD60CD81BAD3D320045EC64 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CD71BAD3D320045EC64 /* apps.plist */; settings = {ASSET_TAGS = (); }; };
 		DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */; settings = {ASSET_TAGS = (); }; };
 		DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		DAD60CE51BAEA7FA0045EC64 /* NSString+CachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAppModel.m; sourceTree = "<group>"; };
 		DAD60CE01BAE4B240045EC64 /* HMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTableViewCell.h; sourceTree = "<group>"; };
 		DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTableViewCell.m; sourceTree = "<group>"; };
+		DAD60CE31BAEA7FA0045EC64 /* NSString+CachePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CachePath.h"; sourceTree = "<group>"; };
+		DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CachePath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 			children = (
 				DAD60CC31BAD3C0D0045EC64 /* AppDelegate.h */,
 				DAD60CC41BAD3C0D0045EC64 /* AppDelegate.m */,
+				DAD60CE31BAEA7FA0045EC64 /* NSString+CachePath.h */,
+				DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */,
 				DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */,
 				DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */,
+				DAD60CE51BAEA7FA0045EC64 /* NSString+CachePath.m in Sources */,
 				DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */,
 				DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */,
 			);
@@ -348,6 +354,7 @@
 				DAD60CD61BAD3C0D0045EC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
