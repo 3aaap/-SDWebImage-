@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HMAppModel.h"
+#import "HMTableViewCell.h"
 
 @interface ViewController ()
 
@@ -66,14 +67,14 @@
     static NSString* ID = @"AppInfo";
 
     //从缓存池中取出cell
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    HMTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
     //得到数据模型
     HMAppModel* model = self.modelArr[indexPath.row];
 
     //给cell的属性赋值
-    cell.textLabel.text = model.name;
-    cell.detailTextLabel.text = model.download;
+    cell.nameLabel.text = model.name;
+    cell.downloadLabel.text = model.download;
 
     //创建blockOperation
     NSBlockOperation* downLoadOperation = [NSBlockOperation blockOperationWithBlock:^{
@@ -87,7 +88,7 @@
 
         //创建更新image的operation
         NSBlockOperation* updateOperation = [NSBlockOperation blockOperationWithBlock:^{
-            cell.imageView.image = image;
+            cell.headView.image = image;
         }];
         /**
          *  回到主线程更新UI
@@ -101,8 +102,8 @@
     [concurrentQueue addOperation:downLoadOperation];
 
     //判断是否使用占位图片
-    if (!cell.imageView.image) {
-        cell.imageView.image = [UIImage imageNamed:@"user_default"];
+    if (!cell.headView.image) {
+        cell.headView.image = [UIImage imageNamed:@"user_default"];
     }
 
     return cell;

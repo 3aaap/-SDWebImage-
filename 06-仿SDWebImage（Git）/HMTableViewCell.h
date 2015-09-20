@@ -10,4 +10,8 @@
 
 @interface HMTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView* headView;
+@property (weak, nonatomic) IBOutlet UILabel* nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel* downloadLabel;
+
 @end
