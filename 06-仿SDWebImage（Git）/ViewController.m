@@ -124,7 +124,25 @@
 
         return cell;
     }
+    /**
+     *  创建操作队列执行图片下载的任务
+     */
+    [self downloadImage:indexPath];
+    //判断是否使用占位图片
+    if (![self.imageCache objectForKey:model.icon]) {
+        cell.headView.image = [UIImage imageNamed:@"user_default"];
+    }
 
+    return cell;
+}
+/**
+ *  创建操作队列来执行图片下载任务
+ *
+ *  @param indexPath
+ */
+- (void)downloadImage:(NSIndexPath*)indexPath
+{
+    HMAppModel* model = self.modelArr[indexPath.row];
     //创建blockOperation
     NSBlockOperation* downLoadOperation = [NSBlockOperation blockOperationWithBlock:^{
         /**
@@ -143,7 +161,8 @@
 
         //创建更新image的operation
         NSBlockOperation* updateOperation = [NSBlockOperation blockOperationWithBlock:^{
-            cell.headView.image = [self.imageCache objectForKey:model.icon];
+            //            cell.headView.image = [self.imageCache objectForKey:model.icon];
+            [self.tableView reloadRowsAtIndexPaths:@[ indexPath ] withRowAnimation:UITableViewRowAnimationRight];
         }];
         /**
          *  回到主线程更新UI
@@ -159,12 +178,6 @@
     [concurrentQueue addOperation:downLoadOperation];
     //将操作任务存入操作缓存
     [self.operationCache setObject:downLoadOperation forKey:model.icon];
-    //判断是否使用占位图片
-    if (![self.imageCache objectForKey:model.icon]) {
-        cell.headView.image = [UIImage imageNamed:@"user_default"];
-    }
-
-    return cell;
 }
 
 #pragma mark-----receive memory warning------
@@ -172,6 +185,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    NSLog(@"----");
     //取消正在下载队列中的下载任务
     [self.queue cancelAllOperations];
     //清空图片缓存
