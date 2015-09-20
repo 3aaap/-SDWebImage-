@@ -15,6 +15,7 @@
 		DAD60CD01BAD3C0D0045EC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */; };
 		DAD60CD81BAD3D320045EC64 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD60CD71BAD3D320045EC64 /* apps.plist */; settings = {ASSET_TAGS = (); }; };
 		DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */; settings = {ASSET_TAGS = (); }; };
+		DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		DAD60CD71BAD3D320045EC64 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 		DAD60CD91BAD3D630045EC64 /* HMAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAppModel.h; sourceTree = "<group>"; };
 		DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAppModel.m; sourceTree = "<group>"; };
+		DAD60CE01BAE4B240045EC64 /* HMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTableViewCell.h; sourceTree = "<group>"; };
+		DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			children = (
 				DAD60CC91BAD3C0D0045EC64 /* Main.storyboard */,
 				DAD60CCE1BAD3C0D0045EC64 /* LaunchScreen.storyboard */,
+				DAD60CE01BAE4B240045EC64 /* HMTableViewCell.h */,
+				DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */,
+				DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */,
 				DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */,
 				DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */,
 				DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */,
