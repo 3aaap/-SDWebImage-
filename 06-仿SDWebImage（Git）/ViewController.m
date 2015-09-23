@@ -10,6 +10,7 @@
 #import "HMAppModel.h"
 #import "HMTableViewCell.h"
 #import "NSString+CachePath.h"
+#import "UIImageView+HMExtension.h"
 
 @interface ViewController ()
 
@@ -101,37 +102,40 @@
     //得到数据模型
     HMAppModel* model = self.modelArr[indexPath.row];
 
+//    cell.headView.image = [UIImage imageNamed:@"user_default"];
+    [cell.headView setImageFromDownloadWithUrlStr:model.icon];
+
     //给cell的属性赋值
     cell.nameLabel.text = model.name;
     cell.downloadLabel.text = model.download;
-
-    //判断图片缓存池中是否存在对应的图片对象
-    if ([self.imageCache objectForKey:model.icon]) {
-        cell.headView.image = [self.imageCache objectForKey:model.icon];
-        return cell;
-    }
-
-    //判断沙盒缓存中是否存在对应的图片
-    NSData* imageData = [NSData dataWithContentsOfFile:[model.icon getImagePath]];
-    if (imageData) {
-        UIImage* sandboxImage = [UIImage imageWithData:imageData];
-        cell.headView.image = sandboxImage;
-        return cell;
-    }
-
-    //判断操作缓冲池是否存在相应的操作，如果存在，直接返回cell
-    if ([self.operationCache objectForKey:model.icon]) {
-
-        return cell;
-    }
-    /**
-     *  创建操作队列执行图片下载的任务
-     */
-    [self downloadImage:indexPath];
-    //判断是否使用占位图片
-    if (![self.imageCache objectForKey:model.icon]) {
-        cell.headView.image = [UIImage imageNamed:@"user_default"];
-    }
+    //
+    //    //判断图片缓存池中是否存在对应的图片对象
+    //    if ([self.imageCache objectForKey:model.icon]) {
+    //        cell.headView.image = [self.imageCache objectForKey:model.icon];
+    //        return cell;
+    //    }
+    //
+    //    //判断沙盒缓存中是否存在对应的图片
+    //    NSData* imageData = [NSData dataWithContentsOfFile:[model.icon getImagePath]];
+    //    if (imageData) {
+    //        UIImage* sandboxImage = [UIImage imageWithData:imageData];
+    //        cell.headView.image = sandboxImage;
+    //        return cell;
+    //    }
+    //
+    //    //判断操作缓冲池是否存在相应的操作，如果存在，直接返回cell
+    //    if ([self.operationCache objectForKey:model.icon]) {
+    //
+    //        return cell;
+    //    }
+    //    /**
+    //     *  创建操作队列执行图片下载的任务
+    //     */
+    //    [self downloadImage:indexPath];
+    //    //判断是否使用占位图片
+    //    if (![self.imageCache objectForKey:model.icon]) {
+    //        cell.headView.image = [UIImage imageNamed:@"user_default"];
+    //    }
 
     return cell;
 }

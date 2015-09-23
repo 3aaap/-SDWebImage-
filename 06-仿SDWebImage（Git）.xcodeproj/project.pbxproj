@@ -17,6 +17,10 @@
 		DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CDA1BAD3D630045EC64 /* HMAppModel.m */; settings = {ASSET_TAGS = (); }; };
 		DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		DAD60CE51BAEA7FA0045EC64 /* NSString+CachePath.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */; settings = {ASSET_TAGS = (); }; };
+		DAEA84531BB17EE1007CC67D /* HMOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA844C1BB17EE1007CC67D /* HMOperationManager.m */; settings = {ASSET_TAGS = (); }; };
+		DAEA84541BB17EE1007CC67D /* HMWebOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA844E1BB17EE1007CC67D /* HMWebOperation.m */; settings = {ASSET_TAGS = (); }; };
+		DAEA84551BB17EE1007CC67D /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA84501BB17EE1007CC67D /* NSString+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		DAEA84561BB17EE1007CC67D /* UIImageView+HMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEA84521BB17EE1007CC67D /* UIImageView+HMExtension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		DAD60CE11BAE4B240045EC64 /* HMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTableViewCell.m; sourceTree = "<group>"; };
 		DAD60CE31BAEA7FA0045EC64 /* NSString+CachePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CachePath.h"; sourceTree = "<group>"; };
 		DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CachePath.m"; sourceTree = "<group>"; };
+		DAEA844B1BB17EE1007CC67D /* HMOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMOperationManager.h; sourceTree = "<group>"; };
+		DAEA844C1BB17EE1007CC67D /* HMOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMOperationManager.m; sourceTree = "<group>"; };
+		DAEA844D1BB17EE1007CC67D /* HMWebOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMWebOperation.h; sourceTree = "<group>"; };
+		DAEA844E1BB17EE1007CC67D /* HMWebOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMWebOperation.m; sourceTree = "<group>"; };
+		DAEA844F1BB17EE1007CC67D /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		DAEA84501BB17EE1007CC67D /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		DAEA84511BB17EE1007CC67D /* UIImageView+HMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HMExtension.h"; sourceTree = "<group>"; };
+		DAEA84521BB17EE1007CC67D /* UIImageView+HMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 		DAD60CBF1BAD3C0D0045EC64 /* 06-仿SDWebImage（Git） */ = {
 			isa = PBXGroup;
 			children = (
+				DAEA844A1BB17EC3007CC67D /* Lib */,
 				DAD60CDF1BAD3F410045EC64 /* Other */,
 				DAD60CDE1BAD3F3C0045EC64 /* View */,
 				DAD60CDD1BAD3F330045EC64 /* Controller */,
@@ -127,6 +140,21 @@
 				DAD60CE41BAEA7FA0045EC64 /* NSString+CachePath.m */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		DAEA844A1BB17EC3007CC67D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DAEA844B1BB17EE1007CC67D /* HMOperationManager.h */,
+				DAEA844C1BB17EE1007CC67D /* HMOperationManager.m */,
+				DAEA844D1BB17EE1007CC67D /* HMWebOperation.h */,
+				DAEA844E1BB17EE1007CC67D /* HMWebOperation.m */,
+				DAEA844F1BB17EE1007CC67D /* NSString+Extension.h */,
+				DAEA84501BB17EE1007CC67D /* NSString+Extension.m */,
+				DAEA84511BB17EE1007CC67D /* UIImageView+HMExtension.h */,
+				DAEA84521BB17EE1007CC67D /* UIImageView+HMExtension.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,11 +229,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD60CC81BAD3C0D0045EC64 /* ViewController.m in Sources */,
+				DAEA84561BB17EE1007CC67D /* UIImageView+HMExtension.m in Sources */,
 				DAD60CE21BAE4B240045EC64 /* HMTableViewCell.m in Sources */,
 				DAD60CC51BAD3C0D0045EC64 /* AppDelegate.m in Sources */,
 				DAD60CE51BAEA7FA0045EC64 /* NSString+CachePath.m in Sources */,
 				DAD60CDB1BAD3D630045EC64 /* HMAppModel.m in Sources */,
 				DAD60CC21BAD3C0D0045EC64 /* main.m in Sources */,
+				DAEA84531BB17EE1007CC67D /* HMOperationManager.m in Sources */,
+				DAEA84551BB17EE1007CC67D /* NSString+Extension.m in Sources */,
+				DAEA84541BB17EE1007CC67D /* HMWebOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
