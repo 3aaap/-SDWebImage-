@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSMutableDictionary<NSString*, UIImage*>* imageCache;
 @property (nonatomic, strong) NSMutableDictionary<NSString*, HMWebOperation*> * oprationCache;
 @property (nonatomic, copy) NSString *preUrl;
+@property (nonatomic, strong) NSOperationQueue *queue;
 
 @end
 
@@ -91,17 +92,22 @@ static id instance;
         if (image) {
             //将图片放入图片缓冲池
             [self.imageCache setObject:image forKey:urlStr];
+            if (block) {
+                block(image);
+            }
+        } else{
+            NSLog(@"----------");
+            block([UIImage imageNamed:@"user_default"]);
         }
-        if (block) {
-            block(image);
-        }
+        
         //任务执行完后，将操作缓冲池中的操作删除
         [self.oprationCache removeObjectForKey:urlStr];
     }];
-    
+    //将操作对象加入并发队列
     NSOperationQueue *concurrentQueue = [[NSOperationQueue alloc]init];
     [self.oprationCache setObject:operation forKey:urlStr];
     [concurrentQueue addOperation:operation];
+    self.queue = concurrentQueue;
     
 }
 
@@ -139,5 +145,31 @@ static id instance;
     }
     return _imageCache;
 }
+
+#pragma mark--------memory realease--------
+/**
+ *  重写init方法，向通知中心添加通知的接收者
+ *
+ *  @return
+ */
+- (instancetype)init
+{
+    if (self = [super init]) {
+#if TARGET_OS_IPHONE
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(memoryRelease) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+#endif
+    }
+    return self;
+}
+/**
+ *  清理内存
+ */
+- (void)memoryRelease
+{
+    [self.queue cancelAllOperations];
+    [self.oprationCache removeAllObjects];
+    [self.imageCache removeAllObjects];
+}
+
 
 @end
